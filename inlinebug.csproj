@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseMonoRuntime>true</UseMonoRuntime>
+  </PropertyGroup>
+
+  <!--<Target Name="UpdateRuntimePackVersion" BeforeTargets="ProcessFrameworkReferences">
+    <ItemGroup>
+      <KnownRuntimePack Condition="%(RuntimePackLabels) == 'Mono'" LatestRuntimeFrameworkVersion="8.0.0-dev" />
+    </ItemGroup>
+  </Target>-->
+
+  <ItemGroup>
+    <Reference Include="Microsoft.MacCatalyst.dll" />
+  </ItemGroup>
+</Project>
